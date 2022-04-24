@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counterup.js</title>
+</head>
+
+<body>
+    <!-- root element -->
+    <h1 class="counter" data-count="7000"></h1>
+    <!-- counterup script -->
+    <script src="src/counterup.min.js"></script>
+    <!-- counterup use -->
+    <script>
+        // get target root element
+        const counter = document.querySelector(".counter");
+        // get max data or hard code value
+        const maxData = parseFloat(counter.dataset.count);
+
+        // instatiate CounterUp
+        const counterup = new CounterUp({
+            root: counter,
+            min: 0,
+            max: maxData,
+            prefix: "$",
+            gap: 250,
+            speed: 45
+        })
+
+        // run the counterup
+        counterup.run();
+    </script>
+</body>
+
+</html>
