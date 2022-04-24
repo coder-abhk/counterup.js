@@ -1,5 +1,5 @@
 # options
->> set the available options
+# step1: set the available options
 let options = {
     root: element__reference,
     min: start__value,
@@ -11,11 +11,9 @@ let options = {
 };
 
 # instantiate CounterUp
->> create counterup object
->> counterup constructor takes in options as a object
+# step2: create counterup object and pass options to CounterUp(options)
 let counterup = new CounterUp(options);
 
 # run counterup object
->> run the counterup
 counterup.run();
 # end
