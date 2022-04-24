@@ -1,4 +1,5 @@
-#options
+# options
+>> set the available options
 let options = {
     root: element__reference,
     min: start__value,
@@ -9,9 +10,12 @@ let options = {
     postfix: postfix__string
 };
 
-#instantiate CounterUp
+# instantiate CounterUp
+>> create counterup object
+>> counterup constructor takes in options as a object
 let counterup = new CounterUp(options);
 
-#run counterup object
+# run counterup object
+>> run the counterup
 counterup.run();
-#end
+# end
